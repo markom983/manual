@@ -1,0 +1,52 @@
+.headerContent {
+  position: relative;
+  width: 100%;
+  align-content: center;
+}
+
+.container {
+  position: relative;
+  /*width: 550px;*/
+  color: #0B3B3C;
+  margin-left: 138px;
+}
+
+.headerTitle {
+  font-family: 'TT Norms Pro', serif;
+  font-size: 90px;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+}
+
+.headerDescription {
+  font-family: 'TT Norms Pro', serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  white-space: pre-line;
+  margin-bottom: 36px;
+}
+
+.takeTheQuizButton {
+  font-family: 'TT Norms Pro', serif;
+  background: #7E0707;
+  color: white;
+  height: 45px;
+  padding: 15px 30px 15px 30px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 880px) {
+  .container {
+    margin-left: 10px;
+  }
+}
