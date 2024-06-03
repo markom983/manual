@@ -2,9 +2,14 @@
 
 import Image from "next/image";
 import heroImage from "@/public/hero.png";
+import { Questions } from "@/components/props";
 import styles from "./header-content.module.css";
 
-export default function HeaderContent() {
+type HeaderContentProps = {
+  questionsData: Questions
+}
+
+export default function HeaderContent({questionsData}: HeaderContentProps) {
   return (
     <div className={styles.headerContent}>
       <Image src={heroImage} alt={"header image"} priority fill />
