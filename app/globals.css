@@ -15,8 +15,5 @@ body {
   margin: 0;
   background-color: #ffffff;
   color: #eee7ea;
-}
-
-::-webkit-scrollbar {
-  width: 0;  /* Remove scrollbar space */
+  /*overflow-x: hidden;*/
 }

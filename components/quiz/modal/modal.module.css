@@ -1,0 +1,31 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  overflow: scroll;
+}
+
+.modal {
+  background: white;
+  padding: 1.25rem;
+  border-radius: 5px;
+  width: 80%;
+  /*max-width: 500px;*/
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0.625rem;
+  right: 0.625rem;
+  background: transparent;
+  border: none;
+  font-size: 1.125rem;
+  cursor: pointer;
+}

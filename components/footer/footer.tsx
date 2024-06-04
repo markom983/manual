@@ -1,11 +1,15 @@
 import Image from "next/image";
-import styles from "./footer.module.css";
 
+// component
 import FooterNav from "@/components/footer/footer-nav";
+
+// icons
 import facebookIcon from "../../public/facebook.svg";
 import googleIcon from "../../public/google.svg";
 import twitterIcon from "../../public/twitter.svg";
 import symbolIcon from "../../public/symbol.svg";
+
+import styles from "./footer.module.css";
 
 export default function Footer() {
   const product = ["popular", "trending", "guided", "products"]
