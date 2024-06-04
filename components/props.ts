@@ -4,12 +4,12 @@ interface Option {
   isRejection: boolean;
 }
 
-export interface Question {
+export interface QuestionProps {
   question: string;
   type: string;
   options: Option[];
 }
 
-export interface Questions {
-  questions: Question[]
+export interface QuestionsProps {
+  questions: QuestionProps[]
 }
