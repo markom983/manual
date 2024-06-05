@@ -21,7 +21,7 @@ export default function Home() {
       image_url: "/photo.png",
       image_position: "right"
     }
-  ]
+  ];
 
   return (
     <main className={styles.main}>
@@ -38,7 +38,7 @@ export default function Home() {
               small_title={card.small_title}
               description={card.description}
             />
-          )
+          );
         })}
       </div>
     </main>

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 // components
-import Question from "@/components/quiz/question";
-import QuestionResult from "@/components/quiz/question-result";
+import QuizQuestion from "@/components/quiz/quiz-question";
+import QuizQuestionResult from "@/components/quiz/quiz-question-result";
 
 // props
 import { QuestionProps, QuestionsProps } from "@/components/props";
@@ -44,7 +44,7 @@ export default function QuizQuestions({ onClose, questionsData }:QuizProps) {
   return (
     <>
       {!isLastQuestion ? (
-        <Question
+        <QuizQuestion
           questionData={questionData}
           currentQuestionIndex={currentQuestionIndex}
           handleAnswer={handleAnswer}
@@ -52,8 +52,8 @@ export default function QuizQuestions({ onClose, questionsData }:QuizProps) {
           prevQuestion={prevQuestion}
         />
       ) : (
-        <QuestionResult isRejection={isRejection} onClose={onClose} />
+        <QuizQuestionResult isRejection={isRejection} onClose={onClose} />
       )}
     </>
-  )
+  );
 }

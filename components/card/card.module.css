@@ -1,7 +1,6 @@
 .cardContainer {
   display: flex;
   flex-direction: row;
-  /*margin: 90px 0;*/
 }
 
 .cardBackgroundText {
@@ -27,7 +26,6 @@
 }
 
 .cardSmallTitle {
-  font-family: 'TT Norms Pro', sans-serif;
   font-size: 0.625rem;
   font-weight: 700;
   line-height: 0.93;
@@ -38,7 +36,6 @@
 }
 
 .cardTitle {
-  font-family: 'TT Norms Pro', sans-serif;
   font-size: 1.75rem;
   font-weight: 400;
   line-height: 2.25rem;
@@ -48,7 +45,6 @@
 }
 
 .cardDescription {
-  font-family: 'TT Norms Pro', sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.875rem;
@@ -79,8 +75,4 @@
   .cardBackgroundText {
     display: none;
   }
-
-  /*.cardDescription {*/
-  /*  text-align: center;*/
-  /*}*/
 }

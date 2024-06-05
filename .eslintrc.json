@@ -1,3 +1,19 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    // Ensures props and state inside functions are always up-to-date
+    "react-hooks/exhaustive-deps": "error",
+    "import/newline-after-import": ["error", { "count": 1 }],
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"],
+    "eol-last": ["error", "always"]
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.d.ts"],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      }
+    }
+  ]
 }

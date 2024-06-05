@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-import styles from "./modal.module.css";
+import styles from "./quiz-modal.module.css";
 
 type QuizModalProps = {
   isOpen: boolean;
@@ -13,10 +13,10 @@ export default function QuizModal({ isOpen, children }: QuizModalProps) {
   }
 
   return (
-    <div className={styles.overlay}>
+    <dialog className={styles.overlay}>
       <div className={styles.modal}>
         {children}
       </div>
-    </div>
+    </dialog>
   );
 }

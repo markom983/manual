@@ -39,5 +39,5 @@ export default function CardComponent({
         <p className={styles.cardDescription}>{description}</p>
       </div>
     </div>
-  )
+  );
 }

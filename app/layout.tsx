@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
 import type { Metadata } from "next";
+import { ReactNode } from "react";
 
 // components
 import Footer from "@/components/footer/footer";

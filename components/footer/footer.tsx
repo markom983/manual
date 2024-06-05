@@ -12,9 +12,9 @@ import symbolIcon from "../../public/symbol.svg";
 import styles from "./footer.module.css";
 
 export default function Footer() {
-  const product = ["popular", "trending", "guided", "products"]
-  const company = ["press", "mission", "strategy", "about"]
-  const info = ["support", "customer service", "get started"]
+  const product = ["popular", "trending", "guided", "products"];
+  const company = ["press", "mission", "strategy", "about"];
+  const info = ["support", "customer service", "get started"];
 
   return (
     <footer className={styles.footerContainer}>
@@ -38,5 +38,5 @@ export default function Footer() {
         <span className={styles.footerCopyrightText}>© 2021 Manual. All rights reserved</span>
       </div>
     </footer>
-  )
+  );
 }

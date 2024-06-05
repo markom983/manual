@@ -12,7 +12,7 @@ type QuestionPropsType = {
   handleAnswer: (value: string | boolean, isRejection: boolean) => void;
   prevQuestion: () => void;
 }
-export default function Question({
+export default function QuizQuestion({
   questionData,
   currentQuestionIndex,
   userAnswers,
@@ -29,7 +29,7 @@ export default function Question({
               <label>
                 <input
                   type="checkbox"
-                  name={`question${currentQuestionIndex}`}
+                  // name={`question${currentQuestionIndex}`}
                   value={option.value.toString()}
                   checked={userAnswers[currentQuestionIndex] === option.value}
                   onChange={() => handleAnswer(option.value, option.isRejection)}
@@ -37,12 +37,12 @@ export default function Question({
                 <span style={{marginLeft: "20px"}} dangerouslySetInnerHTML={{ __html: option.display }} />
               </label>
             </li>
-          )
+          );
         })}
       </ul>
       <div className={styles.navigation}>
         <button onClick={prevQuestion} disabled={currentQuestionIndex === 0}>Previous</button>
       </div>
     </>
-  )
+  );
 }
