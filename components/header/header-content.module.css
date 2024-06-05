@@ -25,8 +25,8 @@
   line-height: 5.62rem;
   letter-spacing: -0.03em;
   text-align: left;
-  margin-bottom: 1.25rem;
   white-space: pre-wrap;
+  margin: 0 0 1.25rem 0;
 }
 
 .headerDescription {
@@ -35,7 +35,7 @@
   line-height: 1.875;
   text-align: left;
   white-space: pre-line;
-  margin-bottom: 2.25rem;
+  margin: 0 0 2.25rem 0;
 }
 
 .takeTheQuizButton {
@@ -47,6 +47,8 @@
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+  border: none;
+  cursor: pointer;
 }
 
 @media (max-width: 50em) {

@@ -1,6 +1,4 @@
-import React from "react";
-
-import styles from "./quiz-questions.module.css";
+import styles from "./quiz-question-result.module.css";
 
 type QuestionResultProps = {
   isRejection: boolean;

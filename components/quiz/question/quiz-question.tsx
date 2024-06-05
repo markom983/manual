@@ -1,9 +1,7 @@
-import React from "react";
-
 // components
 import { QuestionProps } from "@/components/props";
 
-import styles from "@/components/quiz/quiz-questions.module.css";
+import styles from "./quiz-question.module.css";
 
 type QuestionPropsType = {
   questionData: QuestionProps
@@ -29,7 +27,6 @@ export default function QuizQuestion({
               <label>
                 <input
                   type="checkbox"
-                  // name={`question${currentQuestionIndex}`}
                   value={option.value.toString()}
                   checked={userAnswers[currentQuestionIndex] === option.value}
                   onChange={() => handleAnswer(option.value, option.isRejection)}
@@ -41,7 +38,7 @@ export default function QuizQuestion({
         })}
       </ul>
       <div className={styles.navigation}>
-        <button onClick={prevQuestion} disabled={currentQuestionIndex === 0}>Previous</button>
+        {currentQuestionIndex === 0 ? null : (<button onClick={prevQuestion}>Previous</button>)}
       </div>
     </>
   );

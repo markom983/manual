@@ -15,7 +15,7 @@
   line-height: 3.75rem;
   letter-spacing: -0.03em;
   color: #0B3B3C;
-  margin-bottom: 4.37rem;
+  margin: 0 0 4.37rem 0;
 }
 
 .mainContent {
@@ -27,12 +27,22 @@
 }
 
 /*
+ screen max-width: 1320px
+ */
+@media (max-width: 82.5em) {
+  .mainContent {
+    padding-left: 6.25rem;
+    padding-right: 8.75rem;
+  }
+}
+
+/*
  screen max-width: 1024px
  */
 @media (max-width: 64em) {
   .mainContent {
-    padding-left: 6.25rem;
-    padding-right: 8.75rem;
+    padding-left: 4.25rem;
+    padding-right: 6.75rem;
   }
 }
 
@@ -43,6 +53,7 @@
   .mainContent {
     padding-right: 1.25rem;
     padding-left: 1.25rem;
+    row-gap: 5.625rem;
   }
 
   .image {

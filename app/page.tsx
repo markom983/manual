@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <span className={styles.mainTitle}>What we can help with</span>
+      <h1 className={styles.mainTitle}>What we can help with</h1>
       <div className={styles.mainContent}>
         {data.map(card => {
           return (

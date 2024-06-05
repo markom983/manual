@@ -1,5 +1,5 @@
 // components
-import QuizQuestions from "@/components/quiz/quiz-questions";
+import QuizQuestions from "@/components/quiz/questions/quiz-questions";
 
 // props
 import { QuestionsProps } from "@/components/props";

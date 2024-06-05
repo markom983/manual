@@ -35,7 +35,7 @@ export default function CardComponent({
       />
       <div className={styles.cardDescriptionContainer}>
         <span className={styles.cardSmallTitle}>{small_title}</span>
-        <span key={id} className={styles.cardTitle}>{title}</span>
+        <h3 key={id} className={styles.cardTitle}>{title}</h3>
         <p className={styles.cardDescription}>{description}</p>
       </div>
     </div>

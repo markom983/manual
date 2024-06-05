@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 // components
-import QuizQuestion from "@/components/quiz/quiz-question";
-import QuizQuestionResult from "@/components/quiz/quiz-question-result";
+import QuizQuestion from "@/components/quiz/question/quiz-question";
+import QuizQuestionResult from "@/components/quiz/result/quiz-question-result";
 
 // props
 import { QuestionProps, QuestionsProps } from "@/components/props";

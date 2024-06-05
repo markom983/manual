@@ -33,6 +33,7 @@
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 0.625rem;
+  color: #6D8A83;
 }
 
 .cardTitle {
@@ -41,7 +42,7 @@
   line-height: 2.25rem;
   letter-spacing: -0.03em;
   color: #0B3B3C;
-  margin-bottom: 1.375rem;
+  margin: 0 0 1.375rem 0;
 }
 
 .cardDescription {
@@ -74,5 +75,9 @@
 
   .cardBackgroundText {
     display: none;
+  }
+
+  .cardTitle {
+    text-align: center;
   }
 }

@@ -39,7 +39,7 @@ export default function HeaderContent({questionsData}: HeaderContentProps) {
     <div className={styles.headerContent}>
       <Image src={symbolIcon} alt={"symbol icon"} priority className={styles.headerSymbolIcon} height={40} width={40}/>
       <div className={styles.container}>
-        <span className={styles.headerTitle} >Be good {"\n"}to yourself</span>
+        <h1 className={styles.headerTitle} >Be good {"\n"}to yourself</h1>
         <p className={styles.headerDescription}>We’re working around the clock to bring you a holistic approach to your wellness. From top to bottom, inside and out.</p>
         <button className={styles.takeTheQuizButton} onClick={openModal}>Take the quiz</button>
         <QuizModal isOpen={isModalOpen}>
