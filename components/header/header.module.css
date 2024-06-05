@@ -1,21 +1,23 @@
 .headerContainer {
   display: flex;
-}
-
-.headerSymbolIcon {
-  position: absolute;
-  box-shadow: unset!important;
-  z-index: 5;
-  margin-left: 8.6rem;
-  margin-top: 1.9rem;
+  padding-left: 8.6rem;
+  padding-top: 1.875rem;
+  padding-bottom: 11.875rem;
+  height: 46.875rem;
 }
 
 .headerContainer img {
   box-shadow: 0 4px 4px 0 #00000040;
 }
 
-@media (max-width: 55em) {
-  .headerSymbolIcon {
-    margin-left: 1.5rem;
+@media (max-width: 57em)  {
+  .headerContainer {
+    padding-left: 5rem;
+  }
+}
+
+@media (max-width: 50em)  {
+  .headerContainer {
+    padding-left: 2rem;
   }
 }

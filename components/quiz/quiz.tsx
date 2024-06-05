@@ -1,8 +1,10 @@
 // components
-import QuizQuestions from "@/components/quiz/quiz-questions";
+import QuizQuestions from "@/components/quiz/questions/quiz-questions";
+
+// props
 import { QuestionsProps } from "@/components/props";
 
-import styles from './Quiz.module.css';
+import styles from "./Quiz.module.css";
 
 type QuizProps = {
   onClose: () => void;

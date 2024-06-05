@@ -21,11 +21,11 @@ export default function Home() {
       image_url: "/photo.png",
       image_position: "right"
     }
-  ]
+  ];
 
   return (
     <main className={styles.main}>
-      <span className={styles.mainTitle}>What we can help with</span>
+      <h1 className={styles.mainTitle}>What we can help with</h1>
       <div className={styles.mainContent}>
         {data.map(card => {
           return (
@@ -38,7 +38,7 @@ export default function Home() {
               small_title={card.small_title}
               description={card.description}
             />
-          )
+          );
         })}
       </div>
     </main>

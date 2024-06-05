@@ -1,8 +1,8 @@
-"use server"
+"use server";
 
 export async function getQuestions() {
   try {
-    const response = await fetch("https://manual-case-study.herokuapp.com/questionnaires/972423.json")
+    const response = await fetch("https://manual-case-study.herokuapp.com/questionnaires/972423.json");
 
     if (!response.ok) {
       throw new Error("Network response was not OK");

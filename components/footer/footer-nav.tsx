@@ -12,10 +12,10 @@ export default function FooterNav({data, title}:FooterNavProps) {
       <nav className={styles.footerNavLinks}>
         <ul>
           {data.map((link, index) => {
-            return <li key={index}>{link}</li>
+            return <li key={index}>{link}</li>;
           })}
         </ul>
       </nav>
     </div>
-  )
+  );
 }

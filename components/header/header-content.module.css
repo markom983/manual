@@ -1,40 +1,44 @@
 .headerContent {
   position: relative;
-  width: 100%;
+  max-width: 27.375rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 27.375rem;
   align-content: center;
-  padding-bottom: 11.875rem;
-  padding-top: 11.875rem;
 }
 
 .container {
-  position: relative;
   color: #0B3B3C;
-  margin-left: 8.6rem;
+  max-width: 29.25rem;
+}
+
+.headerSymbolIcon {
+  box-shadow: unset!important;
+  z-index: 5;
+  margin-bottom: 7.438rem;
 }
 
 .headerTitle {
-  font-family: 'TT Norms Pro', sans-serif;
   font-size: 5.62rem;
   font-weight: 400;
   line-height: 5.62rem;
   letter-spacing: -0.03em;
   text-align: left;
-  margin-bottom: 1.25rem;
   white-space: pre-wrap;
+  margin: 0 0 1.25rem 0;
 }
 
 .headerDescription {
-  font-family: 'TT Norms Pro', sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.875;
   text-align: left;
   white-space: pre-line;
-  margin-bottom: 2.25rem;
+  margin: 0 0 2.25rem 0;
 }
 
 .takeTheQuizButton {
-  font-family: 'TT Norms Pro', sans-serif;
   background: #7E0707;
   color: white;
   height: 2.8rem;
@@ -43,34 +47,29 @@
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+  border: none;
+  cursor: pointer;
 }
 
-@media (max-width: 64em) {
+@media (max-width: 50em) {
   .headerTitle {
     font-size: 5rem;
+    line-height: 5rem;
   }
 
   .headerDescription {
+    width: 21.87rem;
     font-size: 1rem;
   }
 }
 
-@media (max-width: 55em) {
-  .container {
-    margin-left: 1.5rem;
+@media (max-width: 37.5em) {
+  .headerDescription {
+    width: 13.75rem;
   }
 
   .headerTitle {
-    font-size: 4.5em;
-  }
-
-  .headerDescription {
-    font-size: 0.75rem;
-  }
-
-
-  .headerContent {
-    padding-bottom: 10rem;
-    padding-top: 10rem;
+    font-size: 3.5em;
+    line-height: 3.5rem;
   }
 }
